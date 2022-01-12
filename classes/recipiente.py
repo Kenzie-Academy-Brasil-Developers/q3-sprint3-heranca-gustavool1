@@ -23,9 +23,7 @@ class Recipiente:
 
     def esta_vazio (self):
         if self.conteudo <= 0:
-            print("Está vazio")
             return True
-        print("Não está vazio")
         return False
 
 
@@ -36,17 +34,13 @@ class Recipiente:
 
     def esta_limpo (self):
         if self.limpo == True:
-            print("true")
             return True
-        print("false")
         return False
 
 
     def estado (self):
         if self.limpo == True:
-            print("limpo")
             return "limpo"
-        print("sujo")
         return "sujo"
 
 

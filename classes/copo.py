@@ -23,7 +23,7 @@ class Copo(Recipiente):
 
     def encher(self,bebida:str='água'):
         if self.limpo == False:
-            print("Não se pode encher um copo sujo")
+            
             return "Não se pode encher um copo sujo"
 
         else:
@@ -34,11 +34,9 @@ class Copo(Recipiente):
 
     def beber(self, quantidade:float):
         if quantidade < 0:
-            print("Quantidade deve ser positiva")
             return "Quantidade deve ser positiva"
 
         if quantidade > self.conteudo:
-            print("Não há bebida suficiente no copo")
             return "Não há bebida suficiente no copo"
         
         else:
